@@ -39,7 +39,7 @@ public class TCPConnection {
         rxThread.start();
     }
 
-    public synchronized void sendStrin(String value) {
+    public synchronized void sendString(String value) {
         try {
             out.write(value + "\r\n");
             out.flush();

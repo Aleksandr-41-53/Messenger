@@ -58,6 +58,6 @@ public class ChatServer implements TCPConnectionListener {
 
     private void sendAllConnections(String value) {
         System.out.println(value);
-        for (int i = 0; i < connections.size(); i++) connections.get(i).sendStrin(value);
+        for (int i = 0; i < connections.size(); i++) connections.get(i).sendString(value);
     }
 }
